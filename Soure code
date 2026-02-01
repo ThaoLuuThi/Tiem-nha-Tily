@@ -1,0 +1,170 @@
+index.html
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pink Aura Fashion</title>
+  <style>
+    :root {
+      --pink: #f6c1d1;
+      --pink-light: #fde7ee;
+      --text: #444;
+    }
+
+    * {
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background: var(--pink-light);
+      color: var(--text);
+    }
+
+    /* Header */
+    header {
+      background: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    header h1 {
+      color: var(--pink);
+      margin: 0;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 500;
+    }
+
+    /* Banner */
+    .banner {
+      text-align: center;
+      padding: 80px 20px;
+      background: linear-gradient(135deg, #fde7ee, #fff);
+    }
+
+    .banner h2 {
+      font-size: 40px;
+      color: var(--pink);
+    }
+
+    .banner p {
+      font-size: 18px;
+      margin: 20px 0;
+    }
+
+    .btn {
+      padding: 12px 30px;
+      background: var(--pink);
+      border: none;
+      color: white;
+      font-size: 16px;
+      border-radius: 30px;
+      cursor: pointer;
+    }
+
+    /* Products */
+    .products {
+      padding: 60px 40px;
+    }
+
+    .products h3 {
+      text-align: center;
+      font-size: 28px;
+      margin-bottom: 40px;
+    }
+
+    .product-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
+    }
+
+    .product {
+      background: white;
+      border-radius: 16px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+    }
+
+    .product img {
+      width: 100%;
+      border-radius: 12px;
+    }
+
+    .product h4 {
+      margin: 15px 0 5px;
+    }
+
+    .price {
+      color: var(--pink);
+      font-weight: bold;
+    }
+
+    /* Footer */
+    footer {
+      background: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 60px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Pink Aura</h1>
+  <nav>
+    <a href="#">Trang chủ</a>
+    <a href="#">Sản phẩm</a>
+    <a href="#">Liên hệ</a>
+  </nav>
+</header>
+
+<section class="banner">
+  <h2>Thời trang tinh tế cho nàng</h2>
+  <p>Phong cách nhẹ nhàng – thanh lịch – cuốn hút</p>
+  <button class="btn">Khám phá ngay</button>
+</section>
+
+<section class="products">
+  <h3>Sản phẩm nổi bật</h3>
+  <div class="product-list">
+    <div class="product">
+      <img src="https://via.placeholder.com/300x380" />
+      <h4>Váy pastel dịu dàng</h4>
+      <div class="price">450.000đ</div>
+    </div>
+
+    <div class="product">
+      <img src="https://via.placeholder.com/300x380" />
+      <h4>Áo blouse thanh lịch</h4>
+      <div class="price">320.000đ</div>
+    </div>
+
+    <div class="product">
+      <img src="https://via.placeholder.com/300x380" />
+      <h4>Set công sở nữ tính</h4>
+      <div class="price">680.000đ</div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 Pink Aura Fashion • Designed with love 💗
+</footer>
+
+</body>
+</html>
